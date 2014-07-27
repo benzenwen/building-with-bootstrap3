@@ -1,0 +1,164 @@
+extends layout
+
+block content
+    //
+      Add Content here
+      ==================================================
+    #maincontent.container.marketing
+      //
+        Headline
+        ==================================================
+      .page-header
+        h1 Products List
+      .breadcrumb-wrapper
+        .container
+          ol.breadcrumb
+            li
+              a(href='./index.html') Home
+            li
+              a(href='#') Products
+            li.active List
+      // Breadcrumbs
+      //
+        Product Family
+        ==================================================
+      h1  Products List Overview 
+      .row
+        .col-md-6
+          #accordion.panel-group
+            .panel.panel-default
+              .panel-heading
+                h4.panel-title
+                  a(data-toggle='collapse', data-parent='#accordion', href='#panel1')
+                    | Click to Expand Panel #1
+              #panel1.collapse.in
+                .panel-body
+                  | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
+            .panel.panel-default
+              .panel-heading
+                h4.panel-title
+                  a(data-toggle='collapse', data-parent='#accordion', data-target='#panel2')
+                    | Click to Expand Panel #2
+              #panel2.collapse
+                .panel-body
+                  | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
+            .panel.panel-default
+              .panel-heading
+                h4.panel-title
+                  a(data-toggle='collapse', data-parent='#accordion', href='#panel3')
+                    | Click to Expand Panel #3
+              #panel3.panel-collapse.collapse
+                .panel-body
+                  | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven&apos;t heard of them accusamus labore sustainable VHS.
+        .col-md-6
+          img.img-responsive.img-rounded(src='../assets/img/Featurette2.jpg', alt='Jelly')
+      //
+        Products Table
+        ==================================================
+      h1  Feature Comparison Table 
+      .table-responsive
+        table.table.table-striped
+          thead
+            tr
+              th
+              th
+                .label.label-primary New
+                p
+                  div
+                    img.img-circle(src='../assets/img/Messaging1.jpg', alt='Lens')
+                  a(href='./detail.html') Product 1
+              th
+                p
+                  div
+                    img.img-circle(src='../assets/img/Messaging2.jpg', alt='FTbn')
+                  a(href='./detail.html') Product 2
+              th
+                p
+                  div
+                    img.img-circle(src='../assets/img/Messaging3.jpg', alt='Filters')
+                  a(href='./detail.html') Product 3
+          tbody
+            tr
+              td Feat. 1
+              td Lorem
+              td ipsum
+              td dolor
+            tr
+              td Feat. 2
+              td sagittis
+              td ipsum
+              td Praesent
+            tr
+              td Feat. 3
+              td Fusce
+              td nec
+              td tellus
+            tr
+              td Feat. 4
+              td augue
+              td semper
+              td porta
+      //
+        Twitter Testimony
+        ==================================================
+      h1 Twitter comments about us
+      .well
+        .row
+          .col-md-6
+            .media
+              a.pull-left(href='#')
+                img.media-object(src='../assets/img/PCB1.jpg', alt='Generic placeholder image')
+              .media-body
+                h4.media-heading Twitter follower 1
+                | &#x9;&#x9;Donec lacinia congue felis in faucibus.
+            // .media
+            .media
+              a.pull-left(href='#')
+                img.media-object(src='../assets/img/PCB2.jpg', alt='Generic placeholder image')
+              .media-body
+                h4.media-heading Twitter follower 2
+                | &#x9;&#x9;Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+                .media
+                  a.pull-left(href='#')
+                    img.media-object(src='../assets/img/PCB3.jpg', alt='Generic placeholder image')
+                  .media-body
+                    h4.media-heading Twitter follower 3
+                    | &#x9;&#x9;    RT Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
+            // .media
+            .text-center
+              ul.pagination
+                li.disabled
+                  span &laquo;
+                li.active
+                  span
+                    | 1
+                    span.sr-only (current)
+                li
+                  a(href='#') 2
+                li
+                  a(href='#') &raquo;
+          .col-md-6
+            img.img-responsive.img-rounded(src='../assets/img/Featurette1.jpg', alt='Leaf')
+          // /.col-md-6
+        // /.row
+      // /.well
+      // FOOTER
+      footer
+        p.pull-right
+          | &copy; 2014 Company, Inc. &middot; 
+          a(href='#') Privacy
+          |  &middot; 
+          a(href='#') Terms
+          |  &middot; 
+          a(href='#') Back to top
+        p
+          address
+            strong Company, Inc.
+            br
+            | &#x9;    123 Anywhere Ave, Suite 456
+            br
+            | &#x9;    Location City, Territory, Country POSTAL123
+            br
+            abbr(title='Phone') P:
+            |  +xy (12) 7890 8765
+    // /.container
